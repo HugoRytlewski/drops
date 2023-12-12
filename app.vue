@@ -97,10 +97,10 @@ let profile = ref(false)
               <span class="text-white">74,99 €</span>
             </div>
 
-            <div class="bg-black text-black rounded-xl p-3 flex flex-col items-center">
+            <div class="bg-white text-black rounded-xl p-3 flex flex-col items-center">
               <img src="./assets/chaussure4.png" alt="Product 1" class="h-40 w-full object-cover rounded-lg" />
-              <span class="text-white"> Chaussures Nike Air Max 90</span>
-              <span class="text-white">160,00 €</span>
+              <span class="text-black"> Chaussures Nike Air Max 90</span>
+              <span class="text-black">160,00 €</span>
             </div>
 
 
