@@ -13,9 +13,9 @@ let profile = ref(false)
 <template>
     <title>Drops</title>
     <nav class="flex items-center justify-between p-4 fixed top-0 left-0 right-0 bg-neutral-950 border-b border-gray-800 z-50">
-      <img src="./assets/menu.svg" alt="Menu" class="h-6 w-6" />
+      <img src="./assets/menu.svg" alt="Menu" class="h-6 w-6 cursor-pointer" />
       <h1 class="text-2xl text-white font-bold">DROPS</h1>
-      <img src="./assets/panier.svg" alt="Cart" class="h-6 w-6 fill-white text-white" />
+      <img src="./assets/panier.svg" alt="Cart" class="h-6 w-6 fill-white text-white cursor-pointer" />
     </nav>
 
     <footer class="z-20 fixed inset-x-0 bottom-10 mx-auto bg-black w-56 h-14 rounded-full flex justify-around items-center">
