@@ -13,9 +13,12 @@ let profile = ref(false)
 <template>
     <title>Drops</title>
     <nav class="flex items-center justify-between p-4 fixed top-0 left-0 right-0 bg-neutral-950 border-b border-gray-800 z-50">
-      <img src="./assets/menu.svg" alt="Menu" class="h-6 w-6 cursor-pointer" />
-      <h1 class="text-2xl text-white font-bold">DROPS</h1>
-      <img src="./assets/panier.svg" alt="Cart" class="h-6 w-6 fill-white text-white cursor-pointer" />
+      <img src="../assets/menu.svg" alt="Menu" class="h-6 w-6 cursor-pointer" />
+      <div class="flex gap-2 h-10 items-center justify-center overflow-hidden">
+        <h1 class="text-2xl text-white font-bold cursor-pointer">DROPS</h1>
+
+      </div>
+      <img src="../assets/panier.svg" alt="Cart" class="h-6 w-6 fill-white text-white cursor-pointer " />
     </nav>
 
     <footer class="z-20 fixed inset-x-0 bottom-10 mx-auto bg-black w-56 h-14 rounded-full flex justify-around items-center">
@@ -37,16 +40,16 @@ let profile = ref(false)
 
     </footer>
 
-    <div class="z-0 flex flex-col justify-center md:items-center min-h-screen bg-neutral-900 text-white">
+    <div class="z-0 flex flex-col justify-center md:items-center min-h-screen bg-neutral-950 text-white">
       <div class="pt-16 pb-4 px-4">
-        <div class="mt-4  md:mt-[-7rem] md:flex flex-col items-center justify-center ">
+        <div class="mt-7 md:mt-0   md:flex flex-col items-center justify-center ">
 
           <div class="bg-white text-black rounded-full flex items-center md:w-96 p-3">
-            <img src="./assets/loupe.svg" alt="Search" class="h-5 w-5 " />
+            <img src="../assets/loupe.svg" alt="Search" class="h-5 w-5 " />
             <input class="ml-2 outline-none bg-transparent flex-grow" type="text" placeholder="Que cherchez vous?"/>
           </div>
           <div class="mt-3 bg-green-600 rounded-full flex items-center justify-left gap-2 p-3 md:w-96">
-            <img src="./assets/pin.svg" alt="Arrow right" class="h-5 w-5" />
+            <img src="../assets/pin.svg" alt="Arrow right" class="h-5 w-5" />
             <span>Limoges , France</span>
           </div>
         </div>
@@ -58,7 +61,7 @@ let profile = ref(false)
         <span class="font-semibold">Tendances</span>
       </div>
       <div class="relative bg-white rounded-b-xl p-3 flex flex-col items-center">
-        <img src="./assets/chaussure.png" alt="Featured Product" class="h-40 w-full object-cover rounded-t-lg" />
+        <img src="../assets/chaussure.png" alt="Featured Product" class="h-40 w-full object-cover rounded-t-lg" />
         <div class="absolute bottom-0 left-0 right-0 p-3 bg-black text-white hover:opacity-75 duration-200">
           <p>Vente de fin d'année jusqu'à 90 % - Achetez maintenant !</p>
         </div>
@@ -69,7 +72,7 @@ let profile = ref(false)
         <span class="font-semibold">Tendances</span>
       </div>
       <div class="relative bg-white rounded-b-xl p-3 flex flex-col items-center">
-        <img src="./assets/chaussure.png" alt="Featured Product" class="h-40 w-full object-cover rounded-t-lg" />
+        <img src="../assets/chaussure.png" alt="Featured Product" class="h-40 w-full object-cover rounded-t-lg" />
         <div class="absolute bottom-0 left-0 right-0 p-3 bg-black text-white hover:opacity-75 duration-200">
           <p>Vente de fin d'année jusqu'à 90 % - Achetez maintenant !</p>
         </div>
@@ -81,27 +84,42 @@ let profile = ref(false)
         <div class="mt-4 bg-green-600 rounded-xl">
           <div class="flex justify-between items-center px-3">
             <span class="text-xl font-semibold mt-3">Nouvelle Collection !</span>
-            <a href="#" class="text-green-600 text-sm font-bold">voir tout</a>
+            <a href="#" class="text-white text-md font-bold ">voir tout</a>
           </div>
 
           <div class="grid grid-cols-1 md:grid-cols-4 gap-4 p-3">
-            <div class="bg-black text-black rounded-xl p-3 flex flex-col items-center">
-              <img src="./assets/chaussure2.png" alt="Product 1" class="h-40 w-full object-cover rounded-lg" />
-              <span class="text-white"> Nike Air Max 90 Futura</span>
+            <div class="bg-black text-black h-72 rounded-xl p-3 flex flex-col items-center cursor-pointer">
+              <img src="../assets/chaussure2.png" alt="Product 1" class="h-40 w-full object-cover rounded-lg" />
+              <div class="flex flex-col justify-center  w-full items-start h-full ">
+                <span class="text-white"> Nike Air Max 90 Futura</span>
+                <span class="text-neutral-500">Chaussure pour Homme</span>
               <span class="text-white">101,97 €</span>
+              </div>
+              
             </div>
 
-            <div class="bg-black text-black rounded-xl p-3 flex flex-col items-center">
-              <img src="./assets/chaussure3.png" alt="Product 1" class="h-40 w-full object-cover rounded-lg" />
+            <div class="bg-black text-black h-72 rounded-xl p-3 flex flex-col items-center cursor-pointer">
+              
+              <img src="../assets/chaussure3.png" alt="Product 1" class="h-40 w-full object-cover rounded-lg" />
+              <div class="flex flex-col justify-center  w-full items-start h-full ">
+
               <span class="text-white"> Nike Precision 6 </span>
+              <span class="text-neutral-500">Chaussure pour Homme</span>
               <span class="text-white">74,99 €</span>
+              
             </div>
+          </div>
 
-            <div class="bg-black text-black rounded-xl p-3 flex flex-col items-center">
-              <img src="./assets/chaussure4.png" alt="Product 1" class="h-40 w-full object-cover rounded-lg" />
+          <div class="bg-black text-black h-72 rounded-xl p-3 flex flex-col items-center cursor-pointer">
+              <img src="../assets/chaussure4.png" alt="Product 1" class="h-40 w-full object-cover rounded-lg" />
+              <div class="flex flex-col justify-center  w-full items-start h-full ">
+
               <span class="text-white"> Chaussures Nike Air Max 90</span>
+              <span class="text-neutral-500">Chaussure pour Homme</span>
               <span class="text-white">160,00 €</span>
             </div>
+          </div>
+
 
 
           </div>
