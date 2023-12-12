@@ -37,7 +37,7 @@ let profile = ref(false)
 
     </footer>
 
-    <div class="z-0 flex flex-col justify-center md:items-center min-h-screen bg-neutral-950 text-white">
+    <div class="z-0 flex flex-col justify-center md:items-center min-h-screen bg-neutral-900 text-white">
       <div class="pt-16 pb-4 px-4">
         <div class="mt-4  md:mt-[-7rem] md:flex flex-col items-center justify-center ">
 
