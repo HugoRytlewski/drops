@@ -12,11 +12,18 @@ let profile = ref(false)
 
 <template>
        <nav class="flex items-center justify-between p-4 fixed top-0 left-0 right-0 bg-neutral-950 border-b border-gray-800 z-50">
-      <svg class="text-white fill-white h-6 w-6 cursor-pointer" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M360-240 120-480l240-240 56 56-144 144h568v80H272l144 144-56 56Z"/></svg>
+        <NuxtLink to="/">
+            <svg class="text-white fill-white h-6 w-6 cursor-pointer" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M360-240 120-480l240-240 56 56-144 144h568v80H272l144 144-56 56Z"/></svg>
+        </NuxtLink>
+
+          <NuxtLink to="/">
+
       <div class="flex gap-2 h-10 items-center justify-center overflow-hidden">
         <h1 class="text-2xl text-white font-bold cursor-pointer">DROPS</h1>
 
       </div>
+    </NuxtLink>
+
       <img src="../assets/panier.svg" alt="Cart" class="h-6 w-6 fill-white text-white cursor-pointer " />
     </nav>
 
@@ -68,19 +75,19 @@ let profile = ref(false)
             <span class="font-bold">Taille :</span>
 
             <div class="flex  gap-2">
-                <div class="h-10 w-10 bg-white rounded-full flex items-center justify-center"><p class="text-green-600 font-bold">38</p></div>
-                <div class="h-10 w-10 bg-white rounded-full flex items-center justify-center"><p class="text-green-600 font-bold">39</p></div>
-                <div class="h-10 w-10 bg-white rounded-full flex items-center justify-center"><p class="text-green-600 font-bold">40</p></div>
-                <div class="h-10 w-10 bg-white rounded-full flex items-center justify-center"><p class="text-green-600 font-bold">41</p></div>
-                <div class="h-10 w-10 bg-white rounded-full flex items-center justify-center"><p class="text-green-600 font-bold">42</p></div>
-                <div class="h-10 w-10 bg-white rounded-full flex items-center justify-center"><p class="text-green-600 font-bold">43</p></div>
+                <div class="h-10 w-10 bg-white rounded-full flex items-center justify-center hover:bg-neutral-200 duration-200 cursor-pointer"><p class="text-green-600 font-bold">38</p></div>
+                <div class="h-10 w-10 bg-white rounded-full flex items-center justify-center hover:bg-neutral-200 duration-200 cursor-pointer"><p class="text-green-600 font-bold">39</p></div>
+                <div class="h-10 w-10 bg-white rounded-full flex items-center justify-center hover:bg-neutral-200 duration-200 cursor-pointer"><p class="text-green-600 font-bold">40</p></div>
+                <div class="h-10 w-10 bg-white rounded-full flex items-center justify-center hover:bg-neutral-200 duration-200 cursor-pointer"><p class="text-green-600 font-bold">41</p></div>
+                <div class="h-10 w-10 bg-white rounded-full flex items-center justify-center hover:bg-neutral-200 duration-200 cursor-pointer"><p class="text-green-600 font-bold">42</p></div>
+                <div class="h-10 w-10 bg-white rounded-full flex items-center justify-center hover:bg-neutral-200 duration-200 cursor-pointer"><p class="text-green-600 font-bold">43</p></div>
 
            
             </div>
-            <div class="bg-white rounded-xl flex items-center p-2 justify-center w-20 ">
-                <p class="text-green-600 ">Acheter</p>
+            <div class="bg-white rounded-xl flex items-center p-2 justify-center w-20 hover:bg-neutral-200 duration-200 cursor-pointer">
+                <p class="text-green-600  ">Acheter</p>
             </div>
-            <div class="bg-green-600 rounded-xl flex items-center justify-center w-fit border border-white p-2 ">
+            <div class="bg-green-600 rounded-xl flex items-center justify-center w-fit border border-white p-2 hover:bg-green-700 duration-200 cursor-pointer">
                 <p>Mettre dans le panier</p>
             </div>
         </div>
